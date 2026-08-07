@@ -3,6 +3,6 @@ idade = 18
 print(f"Idade: {idade}")'''
 
 if idade >= 18:
-    print("Maior de idade")
+    print("Você é maior de idade")
 else:
-    print("Menor de idade")
+    print("Você é menor de idade")
