@@ -1,8 +1,7 @@
-idade = 18
-'''print(type(idade))
-print(f"Idade: {idade}")'''
-
-if idade >= 18:
-    print("Você é maior de idade")
+numero = int(input("Digite um numero:  "))
+if numero >0:
+    print(f"O {numero} é positivo!")
+elif numero < 0:
+    print(f"O {numero} é negativo")
 else:
-    print("Você é menor de idade")
+    print("O numero é zero")
