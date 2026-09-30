@@ -6,5 +6,5 @@ num2 = 20
 n1 = 30
 n2 = 40
 #resultado = soma(num1,num2)
-print(f"{num1} + {num2} = {resultado}")
+#print(f"{num1} + {num2} = {resultado}")
 print(f"{n1} + {n2} = {soma(n1,n2)}")

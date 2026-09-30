@@ -1,5 +1,5 @@
 import random 
-matriz = [[random.randint(1,9) for coluna in range(5)]for linha in range(5)]
+matriz = [[random.randint(1,9) for coluna in range(3)]for linha in range(3)]
 
 def imprime_matriz(matriz):
     dim_linha = len(matriz)
