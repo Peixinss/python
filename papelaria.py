@@ -2,7 +2,9 @@ produtos = []
 def mostrar_menu():
     print(f"\n1 - Cadastrar produto")
     print("2 - Consultar Produto por ID")
-    print("3 - Sair do Programa")
+    print("3 - Mostrar os produtos")
+
+    print("s - Sair do Programa")
 
 def  cadastrar_produto():
     id = int(input("\n Digite o ID do produto: "))
@@ -23,6 +25,12 @@ def busca_id(id):
         else:
             print("\nProduto não encontrado")
 
+def mostrar_produtos():
+    for produto in produtos:
+        print(f"ID: {produto["id"]}")
+        print(f"Nome: {produto["nome"]}")
+        print(f"Preco: {produto["preco"]}")
+
 def menu_escolha(escolha):
     match escolha:
         case "1":
@@ -30,6 +38,8 @@ def menu_escolha(escolha):
         case "2":
             id_produto =int(input("Digite o ID" ))
             busca_id(id_produto)
+        case "3":
+            mostrar_produtos()
 
 while True:
     mostrar_menu()
