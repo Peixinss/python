@@ -32,8 +32,21 @@ while True:
         print(f"Você tem: {pontos} pontos\n")
     else:
         print("Resposta Errada!\n")
+    print(" 5) Quantas patas tem um camundogo ? \n a)2 \n b)6 \n c)4 \n d)8")
+    resposta5 = input(": ")
+    if resposta5 == "c":
+        print("Resposta correta!\n")
+        pontos +=  1
+        print(f"Você tem: {pontos} pontos\n")
 
-    print("Dejesa tentar denovo ? (s/n)")
-    tentardenovo = input(": ").lower
-    if tentardenovo == "n":
+    tentardenovo = 5
+    if tentardenovo == pontos:
+        print("Parabéns você terminou o quiz")
+        print(f"E conseguiu {pontos} pontos!")
         break
+    else:
+        print("\nPoucos pontos ganhados, tente novamente!")
+        print("Deseja continuar ? [s/n]")
+        continuar = input(": ").lower
+        if continuar == "n":
+            break
